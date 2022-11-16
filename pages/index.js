@@ -89,9 +89,10 @@ export default function Home() {
   }
 
   useEffect(() => {
+    alert.info("Tap on the blocks to know more about me!")
     if(personalInfoHandle.active===false && modalHandlers["0"]){
       if(blocks["0"]===false){
-        alert.success("New Blocked Mined!");
+        alert.success("New Block Mined!");
       }
       setBlocks({
         ...blocks,
@@ -106,7 +107,7 @@ export default function Home() {
   useEffect(() => {
     if(employmentInfo.active===false && modalHandlers["1"]){
       if(blocks["2"]===false){
-        alert.success("New Blocked Mined!");
+        alert.success("New Block Mined!");
       }
       setBlocks({
         ...blocks,
@@ -122,7 +123,7 @@ export default function Home() {
   useEffect(() => {
     if(projectsInfo.active===false && modalHandlers["2"]){
       if(blocks["4"]===false){
-        alert.success("New Blocked Mined!");
+        alert.success("New Block Mined!");
       }
       setBlocks({
         ...blocks,
@@ -138,7 +139,7 @@ export default function Home() {
   useEffect(() => {
     if(educationInfo.active===false && modalHandlers["3"]){
       if(blocks["5"]===false){
-        alert.success("New Blocked Mined!");
+        alert.success("New Block Mined!");
       }
       setBlocks({
         ...blocks,
@@ -154,7 +155,7 @@ export default function Home() {
   useEffect(() => {
     if(achievementsInfo.active===false && modalHandlers["4"]){
       if(blocks["3"]===false){
-        alert.success("New Blocked Mined!");
+        alert.success("New Block Mined!");
       }
       setBlocks({
         ...blocks,
@@ -170,7 +171,7 @@ export default function Home() {
   useEffect(() => {
     if(skillsInfo.active===false && modalHandlers["5"]){
       if(blocks["1"]===false){
-        alert.success("New Blocked Mined!");
+        alert.success("New Block Mined!");
       }
       setBlocks({
         ...blocks,
