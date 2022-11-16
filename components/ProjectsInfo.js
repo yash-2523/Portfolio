@@ -30,10 +30,10 @@ export default function ProjectsInfo(props) {
                     <EncodedMode blockNumber={3} blockHash={blockhash} txs={txs} decode={() => setEncoded(false)} />
                     :
 
-                    <div className={`mt-5 ${styles["main-container"]}`}>
-                        <div className={`text-center mt-5 text-light ${styles['name']}`}>Projects</div>
+                    <div className={"mt-5 " + styles["main-container"]}>
+                        <div className={"text-center mt-5 text-light " + styles['name']}>Projects</div>
 
-                        <Accordion className={`mx-auto mt-5 px-2 py-4 ${styles["accordion-items"]}`}>
+                        <Accordion className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon />}
                                 aria-controls="panel1a-content"
@@ -50,7 +50,7 @@ export default function ProjectsInfo(props) {
                             </AccordionDetails>
                         </Accordion>
 
-                        <Accordion className={`mx-auto mt-5 px-2 py-4 ${styles["accordion-items"]}`}>
+                        <Accordion className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon />}
                                 aria-controls="panel1a-content"
@@ -64,11 +64,11 @@ export default function ProjectsInfo(props) {
                             <AccordionDetails className="mt-3">
                                 A DAO system for a community that involves power-based voting and vesting
                                 for users, and developing a liquidity pool. Customized business logic for DAO
-                                management and the security of funds. <a href="https://agrivirtus.farm" target={"_blank"}>Website</a>
+                                management and the security of funds. <a href="https://agrivirtus.farm" target={"_blank"} rel="noreferrer">Website</a>
                             </AccordionDetails>
                         </Accordion>
 
-                        <Accordion className={`mx-auto mt-5 px-2 py-4 ${styles["accordion-items"]}`}>
+                        <Accordion className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon />}
                                 aria-controls="panel1a-content"
@@ -86,7 +86,7 @@ export default function ProjectsInfo(props) {
                             </AccordionDetails>
                         </Accordion>
 
-                        <Accordion className={`mx-auto mt-5 px-2 py-4 ${styles["accordion-items"]}`}>
+                        <Accordion className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon />}
                                 aria-controls="panel1a-content"
@@ -100,12 +100,12 @@ export default function ProjectsInfo(props) {
                             <AccordionDetails className="mt-3">
                                 Built a platform where students can check their academic performance, schedule,
                                 and admin can enroll students into a particular course. The platform was developed
-                                in MERN stack and deployed on vercel. Link to the <a href="https://wmc-guide.vercel.app" target={"_blank"}>website</a>, Link for the <a href="https://dribbble.com/shots/16461580-Student-Companion?utm_source=Clipboard_Shot&utm_campaign=yash__doshi&utm_content=Student%20Companion&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=yash__doshi&utm_content=Student%20Companion&utm_medium=Social_Share" target={"_blank"}>website
+                                in MERN stack and deployed on vercel. Link to the <a href="https://wmc-guide.vercel.app" target={"_blank"} rel="noreferrer">website</a>, Link for the <a href="https://dribbble.com/shots/16461580-Student-Companion?utm_source=Clipboard_Shot&utm_campaign=yash__doshi&utm_content=Student%20Companion&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=yash__doshi&utm_content=Student%20Companion&utm_medium=Social_Share" target={"_blank"} rel="noreferrer">website
                                     design</a>
                             </AccordionDetails>
                         </Accordion>
 
-                        <Accordion className={`mx-auto mt-5 px-2 py-4 ${styles["accordion-items"]}`}>
+                        <Accordion className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon />}
                                 aria-controls="panel1a-content"
@@ -124,7 +124,7 @@ export default function ProjectsInfo(props) {
                             </AccordionDetails>
                         </Accordion>
 
-                        <button className={`btn mt-5 btn-rounded mx-auto`} onClick={() => setEncoded(true)} style={{ backgroundColor: "cyan" }}>Encode Block</button>
+                        <button className={"btn mt-5 btn-rounded mx-auto"} onClick={() => setEncoded(true)} style={{ backgroundColor: "cyan" }}>Encode Block</button>
                     </div>
             }
         </div>

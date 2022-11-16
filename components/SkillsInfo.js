@@ -28,8 +28,8 @@ export default function SkillsInfo(props) {
             <EncodedMode blockNumber={6} blockHash = {blockhash} txs={txs} decode={() => setEncoded(false)} />
         : 
 
-            <div className={`mt-5 ${styles["main-container"]}`}>
-                    <div className={`text-center mt-5 text-light ${styles['name']}`}>Skills</div>
+            <div className={"mt-5 " + styles["main-container"]}>
+                    <div className={"text-center mt-5 text-light " + styles['name']}>Skills</div>
 
                     <div className={`d-flex flex-column align-items-center mt-5 ${styles['list']}`}>
                         <strong><li><Image src={"/solidity.png"} width={30} height={30} />Solidity</li></strong>  
@@ -39,7 +39,7 @@ export default function SkillsInfo(props) {
                         <strong><li><Image src={"/mongodb.png"} width={30} height={30} /> MongoDB</li></strong>  
                         <strong><li><Image src={"/html.png"} width={30} height={30} /> HTML & CSS</li></strong>  
                     </div>
-                    <div className={`text-center mt-5 text-light ${styles['name']}`}>Courses</div>
+                    <div className={"text-center mt-5 text-light " + styles['name']}>Courses</div>
                     <div className={`mx-auto mt-3 px-2 py-4 ${styles["accordion-items"]}`}>
                         <div className="d-flex flex-column">
                             <h3><li>Network Security Auditing with nmap, Udemy</li></h3>
@@ -52,7 +52,7 @@ export default function SkillsInfo(props) {
                             <p className="ps-5">Oct 2021 — Nov 2021</p>
                         </div>               
                     </div>        
-                <button className={`btn mt-5 btn-rounded mx-auto`} onClick={() => setEncoded(true)} style={{backgroundColor: "cyan"}}>Encode Block</button>
+                <button className={"btn mt-5 btn-rounded mx-auto"} onClick={() => setEncoded(true)} style={{backgroundColor: "cyan"}}>Encode Block</button>
             </div>
         }
         </>

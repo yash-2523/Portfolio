@@ -28,12 +28,12 @@ export default function EndingNote(props) {
             <EncodedMode blockNumber={7} blockHash = {blockhash} txs={txs} decode={() => setEncoded(false)} />
         : 
 
-            <div className={`mt-5 ${styles["main-container"]}`}>
-                <div className={`text-center mt-5 text-light ${styles['name']}`}>Feathers on the Cap</div>
+            <div className={"mt-5 " + styles["main-container"]}>
+                <div className={"text-center mt-5 text-light " + styles['name']}>Feathers on the Cap</div>
 
-                    <div className={`mx-auto mt-5 px-2 py-4 ${styles["accordion-items"]}`}>
+                    <div className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                         <div className="d-flex flex-column">
-                            <span className="d-flex align-items-center"><Image className="me-3" src={"/vector32.png"} style={{borderRadius: "30%"}} width={60} height={40} /><h3><a href="#" target={"_blank"}>Vector 32</a></h3></span>
+                            <span className="d-flex align-items-center"><Image className="me-3" src={"/vector32.png"} style={{borderRadius: "30%"}} width={60} height={40} /><h3><a href="#" target={"_blank"} rel="noreferrer">Vector 32</a></h3></span>
                             <p className="ps-5 ms-4">Think out of the Box</p>
                         </div>
                         <span className="mt-4">
@@ -46,9 +46,9 @@ export default function EndingNote(props) {
                             As many companies have invest most of their valuable time in managing internal activities of company, growth of the company suffer. We here come to rescue with our solutions that will reduce the time spent in internal activity and boost companies productivity and ability work flawlessly with a good margin.
                         </span>                   
                     </div>             
-                    <div className={`mx-auto mt-5 px-2 py-4 ${styles["accordion-items"]}`}>
+                    <div className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                         <div className="d-flex flex-column">
-                            <span className="d-flex align-items-center"><Image className="me-3" style={{borderRadius: "50%"}} src={"/agrivirtus.png"} width={60} height={60} /><h3><a href="https://agrivirtus.farm" target={"_blank"}>Agrivirtus</a></h3></span>
+                            <span className="d-flex align-items-center"><Image className="me-3" style={{borderRadius: "50%"}} src={"/agrivirtus.png"} width={60} height={60} /><h3><a href="https://agrivirtus.farm" target={"_blank"} rel="noreferrer">Agrivirtus</a></h3></span>
                         </div>
                         <span className="mt-4">
                             <br /><strong>Role -</strong> Lead Developer at Agrivirtus
@@ -61,9 +61,9 @@ export default function EndingNote(props) {
 
                         </span>                   
                     </div>  
-                    <div className={`mx-auto mt-5 px-2 py-4 ${styles["accordion-items"]}`}>
+                    <div className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                         <div className="d-flex flex-column">
-                            <span className="d-flex align-items-center"><Image className="me-3" style={{borderRadius: "50%"}} src={"/fate.jpeg"} width={60} height={60} /><h3><a href="https://fate-dao.com" target={"_blank"}>Fate DAO</a></h3></span>
+                            <span className="d-flex align-items-center"><Image className="me-3" style={{borderRadius: "50%"}} src={"/fate.jpeg"} width={60} height={60} /><h3><a href="https://fate-dao.com" target={"_blank"} rel="noreferrer">Fate DAO</a></h3></span>
                         </div>
                         <span className="mt-4">
                             <br /><strong>Role -</strong> Lead Developer at Fate DAO
@@ -72,7 +72,7 @@ export default function EndingNote(props) {
                             FATE is a community-owned and social partner-DAO for promising blockchain-powered-investment-based ecosystems. Fate is about bringing people together, and bringing up fantastic project ideas, which can create passive income means for people. The DAO can vote on any project proposal, either passed or rejected using the DAO governance token named Destiny $DNY.
                         </span>                   
                     </div>  
-                <button className={`btn mt-5 btn-rounded mx-auto`} onClick={() => setEncoded(true)} style={{backgroundColor: "cyan"}}>Encode Block</button>
+                <button className={"btn mt-5 btn-rounded mx-auto"} onClick={() => setEncoded(true)} style={{backgroundColor: "cyan"}}>Encode Block</button>
             </div>
         }
         </>

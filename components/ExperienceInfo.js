@@ -27,10 +27,10 @@ export default function ExperienceInfo(props) {
             <EncodedMode blockNumber={2} blockHash = {blockhash} txs={txs} decode={() => setEncoded(false)} />
         : 
 
-            <div className={`mt-5 ${styles["main-container"]}`}>
-                <div className={`text-center mt-5 text-light ${styles['name']}`}>Employment History</div>
+            <div className={"mt-5 " + styles["main-container"]}>
+                <div className={"text-center mt-5 text-light " + styles['name']}>Employment History</div>
 
-                    <div className={`mx-auto mt-5 px-2 py-4 ${styles["accordion-items"]}`}>
+                    <div className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                         <div className="d-flex flex-column">
                             <h3>Blockchain Developer, Get Thrifty LLP</h3>
                             <p>Feb 2022 - Present</p>
@@ -41,7 +41,7 @@ export default function ExperienceInfo(props) {
                             payment gateway platform for Bahrain country's project as a core developer.
                         </span>                   
                     </div>
-                    <div className={`mx-auto mt-5 px-2 py-4 ${styles["accordion-items"]}`}>
+                    <div className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                         <div className="d-flex flex-column">
                             <h3>Full Stack Developer, Troovi.in</h3>
                             <p>Jun 2021 — Aug 2021</p>
@@ -55,7 +55,7 @@ export default function ExperienceInfo(props) {
                         of paperwork.
                         </span>                   
                     </div>                
-                <button className={`btn mt-5 btn-rounded mx-auto`} onClick={() => setEncoded(true)} style={{backgroundColor: "cyan"}}>Encode Block</button>
+                <button className={"btn mt-5 btn-rounded mx-auto"} onClick={() => setEncoded(true)} style={{backgroundColor: "cyan"}}>Encode Block</button>
             </div>
         }
         </>

@@ -27,10 +27,10 @@ export default function EducationInfo(props) {
             <EncodedMode blockNumber={4} blockHash = {blockhash} txs={txs} decode={() => setEncoded(false)} />
         : 
 
-            <div className={`mt-5 ${styles["main-container"]}`}>
-                <div className={`text-center mt-5 text-light ${styles['name']}`}>Education</div>
+            <div className={"mt-5 " + styles["main-container"]}>
+                <div className={"text-center mt-5 text-light " + styles['name']}>Education</div>
 
-                    <div className={`mx-auto mt-5 px-2 py-4 ${styles["accordion-items"]}`}>
+                    <div className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                         <div className="d-flex flex-column">
                             <h3>B.Tech in Computer Science and Engineering</h3>
                             <p>Aug 2019 — Present</p>
@@ -40,7 +40,7 @@ export default function EducationInfo(props) {
                             I am currently pursuing my B.Tech in CSE from Ahmedabad Univeristy. Throughout my college life, I have been part of various projects and have been able to learn a lot of new things. I worked on strengthing the core fundamentals of Computer Science. 
                         </span>                   
                     </div>             
-                <button className={`btn mt-5 btn-rounded mx-auto`} onClick={() => setEncoded(true)} style={{backgroundColor: "cyan"}}>Encode Block</button>
+                <button className={"btn mt-5 btn-rounded mx-auto"} onClick={() => setEncoded(true)} style={{backgroundColor: "cyan"}}>Encode Block</button>
             </div>
         }
         </>

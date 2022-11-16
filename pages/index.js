@@ -187,37 +187,37 @@ export default function Home() {
 
   return (
     <div className={styles['main']}>
-        <div className={`text-center ${styles["title-container"]}`} style={{fontFamily: "Roboto", fontWeight: "900"}}>Yash's Blockchain</div>
+        <div className={"text-center " + styles["title-container"]} style={{fontFamily: "Roboto", fontWeight: "900"}}>Yash's Blockchain</div>
         <div className={styles['content']}>
           
           <span className={styles['block-one-container']}>
-            {chains['6'] && <Image className={`${styles['chain']} ${styles['chain-7']}`} src={"/chain.png"} width={50} height={50}></Image>}
-            {chains['7'] && <Image className={`${styles['chain']} ${styles['chain-8']}`} src={"/chain.png"} width={50} height={50}></Image>}
-            {<Image style={blocks['0'] ? {visibility: 'visible'} : {visibility: 'hidden'}} onClick={() => {handleBlockClick(1); setModalHandlers({...modalHandlers, "1": true})}} className={styles['block']} src={"/block.png"} width={50} height={50}></Image>}
+            {chains['6'] && <Image className={styles['chain'] + " " + styles['chain-7']} src={"/chain.png"} alt="chain" width={50} height={50}></Image>}
+            {chains['7'] && <Image className={styles['chain'] + " " + styles['chain-8']} src={"/chain.png"} alt="chain" width={50} height={50}></Image>}
+            {<Image style={blocks['0'] ? {visibility: 'visible'} : {visibility: 'hidden'}} onClick={() => {handleBlockClick(1); setModalHandlers({...modalHandlers, "1": true})}} className={styles['block']} src={"/block.png"} alt="block" width={50} height={50}></Image>}
           </span>
           <span className={styles['block-two-three-container']}>
-            {<Image style={blocks['1'] ? {visibility: 'visible'} : {visibility: 'hidden'}} onClick={() => {handleBlockClick(6); setModalHandlers({...modalHandlers, "6": true})}} className={styles['block']} src={"/block.png"} width={50} height={50}></Image>}
-            {<Image style={blocks['2'] ? {visibility: 'visible'} : {visibility: 'hidden'}} onClick={() => {handleBlockClick(2); setModalHandlers({...modalHandlers, "2": true})}} className={styles['block']} src={"/block.png"} width={50} height={50}></Image>}
-            {chains['8'] && <Image className={`${styles['chain']} ${styles['chain-9']}`} src={"/chain.png"} width={50} height={50}></Image>}
-            {chains['9'] && <Image className={`${styles['chain']} ${styles['chain-10']}`} src={"/chain.png"} width={50} height={50}></Image>}
+            {<Image style={blocks['1'] ? {visibility: 'visible'} : {visibility: 'hidden'}} onClick={() => {handleBlockClick(6); setModalHandlers({...modalHandlers, "6": true})}} className={styles['block']} src={"/block.png"} alt="block" width={50} height={50}></Image>}
+            {<Image style={blocks['2'] ? {visibility: 'visible'} : {visibility: 'hidden'}} onClick={() => {handleBlockClick(2); setModalHandlers({...modalHandlers, "2": true})}} className={styles['block']} src={"/block.png"} alt="block" width={50} height={50}></Image>}
+            {chains['8'] && <Image className={styles['chain'] + " " + styles['chain-9']} src={"/chain.png"} alt="chain" width={50} height={50}></Image>}
+            {chains['9'] && <Image className={styles['chain'] + " " + styles['chain-10']} src={"/chain.png"} alt="chain" width={50} height={50}></Image>}
           </span>
           <span className={styles['block-center-container']}>
-            {chains['0'] && <Image className={`${styles['chain']} ${styles['chain-1']}`} src={"/chain.png"} width={50} height={50}></Image>}
-            {chains['1'] && <Image className={`${styles['chain']} ${styles['chain-2']}`} src={"/chain.png"} width={50} height={50}></Image>}
-            {chains['2'] && <Image className={`${styles['chain']} ${styles['chain-3']}`} src={"/chain.png"} width={50} height={50}></Image>}
-            {chains['3'] && <Image className={`${styles['chain']} ${styles['chain-4']}`} src={"/chain.png"} width={50} height={50}></Image>}
-            {chains['4'] && <Image className={`${styles['chain']} ${styles['chain-5']}`} src={"/chain.png"} width={50} height={50}></Image>}
-            {chains['5'] && <Image className={`${styles['chain']} ${styles['chain-6']}`} src={"/chain.png"} width={50} height={50}></Image>}
-            {<Image style={blocks['center'] ? {visibility: 'visible'} : {visibility: 'hidden'}} onClick={() => {handleBlockClick(0); setModalHandlers({...modalHandlers, "0": true})}} className={styles['block']} src={"/block.png"} width={50} height={50}></Image>}
+            {chains['0'] && <Image className={styles['chain'] + " " + styles['chain-1']} src={"/chain.png"} alt="chain" width={50} height={50}></Image>}
+            {chains['1'] && <Image className={styles['chain'] + " " + styles['chain-2']} src={"/chain.png"} alt="chain" width={50} height={50}></Image>}
+            {chains['2'] && <Image className={styles['chain'] + " " + styles['chain-3']} src={"/chain.png"} alt="chain" width={50} height={50}></Image>}
+            {chains['3'] && <Image className={styles['chain'] + " " + styles['chain-4']} src={"/chain.png"} alt="chain" width={50} height={50}></Image>}
+            {chains['4'] && <Image className={styles['chain'] + " " + styles['chain-5']} src={"/chain.png"} alt="chain" width={50} height={50}></Image>}
+            {chains['5'] && <Image className={styles['chain'] + " " + styles['chain-6']} src={"/chain.png"} alt="chain" width={50} height={50}></Image>}
+            {<Image style={blocks['center'] ? {visibility: 'visible'} : {visibility: 'hidden'}} onClick={() => {handleBlockClick(0); setModalHandlers({...modalHandlers, "0": true})}} className={styles['block']} src={"/block.png"} alt="block" width={50} height={50}></Image>}
           </span>
           <span className={styles['block-four-five-container']}>
-            {<Image style={blocks['3'] ? {visibility: 'visible'} : {visibility: 'hidden'}} onClick={() => {handleBlockClick(5); setModalHandlers({...modalHandlers, "5": true})}} className={styles['block']} src={"/block.png"} width={50} height={50}></Image>}
-            {<Image style={blocks['4'] ? {visibility: 'visible'} : {visibility: 'hidden'}} onClick={() => {handleBlockClick(3); setModalHandlers({...modalHandlers, "3": true})}} className={styles['block']} src={"/block.png"} width={50} height={50}></Image>}
+            {<Image style={blocks['3'] ? {visibility: 'visible'} : {visibility: 'hidden'}} onClick={() => {handleBlockClick(5); setModalHandlers({...modalHandlers, "5": true})}} className={styles['block']} src={"/block.png"} alt="block" width={50} height={50}></Image>}
+            {<Image style={blocks['4'] ? {visibility: 'visible'} : {visibility: 'hidden'}} onClick={() => {handleBlockClick(3); setModalHandlers({...modalHandlers, "3": true})}} className={styles['block']} src={"/block.png"} alt="block" width={50} height={50}></Image>}
           </span>
           <span className={styles['block-six-container']}>
-            {<Image style={blocks['5'] ? {visibility: 'visible'} : {visibility: 'hidden'}} onClick={() => {handleBlockClick(4); setModalHandlers({...modalHandlers, "4": true})}} className={styles['block']} src={"/block.png"} width={50} height={50}></Image>}
-            {chains['10'] && <Image className={`${styles['chain']} ${styles['chain-11']}`} src={"/chain.png"} width={50} height={50}></Image>}
-            {chains['11'] && <Image className={`${styles['chain']} ${styles['chain-12']}`} src={"/chain.png"} width={50} height={50}></Image>}
+            {<Image style={blocks['5'] ? {visibility: 'visible'} : {visibility: 'hidden'}} onClick={() => {handleBlockClick(4); setModalHandlers({...modalHandlers, "4": true})}} className={styles['block']} src={"/block.png"} alt="block" width={50} height={50}></Image>}
+            {chains['10'] && <Image className={styles['chain'] + " " + styles['chain-11']} src={"/chain.png"} alt="chain" width={50} height={50}></Image>}
+            {chains['11'] && <Image className={styles['chain'] + " " + styles['chain-12']} src={"/chain.png"} alt="chain" width={50} height={50}></Image>}
           </span>
         </div> 
         <FullScreen handle={personalInfoHandle}>{personalInfoHandle.active && <PersonalInfo />}</FullScreen>
@@ -227,7 +227,7 @@ export default function Home() {
         <FullScreen handle={achievementsInfo}>{achievementsInfo.active && <AchievementsInfo />}</FullScreen>
         <FullScreen handle={skillsInfo}>{skillsInfo.active && <SkillsInfo />}</FullScreen>
         <FullScreen handle={endingNote}>{endingNote.active && <EndingNote />}</FullScreen>
-        
+        <Script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossOrigin='anonymous'></Script>
     </div>
   )
 }
