@@ -9,10 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/core": "^5.0.0-alpha.54",
+    "@mui/icons-material": "^5.10.9",
+    "@mui/material": "^5.10.13",
+    "@mui/system": "^5.10.13",
+    "@neoauto-ui/accordion": "^1.4.0",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.3",
+    "js-sha256": "^0.9.0",
     "next": "13.0.3",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-alert": "^7.0.3",
+    "react-alert-template-basic": "^1.0.2",
+    "react-dom": "18.2.0",
+    "react-full-screen": "^1.1.1"
   }
 }
