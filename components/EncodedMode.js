@@ -1,8 +1,10 @@
+import { CancelOutlined } from "@mui/icons-material";
 import HomeStyles from "../styles/Home.module.css";
 export default function EncodedMode ( props ) {
     const {blockNumber, blockHash, txs} = props;
     return (
         <div className={"mt-5 px-2 " + HomeStyles["block-info-container"]}>
+                <CancelOutlined className="cross-btn" onClick={props.close} />
                 <h1 className="text-light text-center text-bold mt-5" style={{fontFamily: "Poppins", fontWeight: "900"}}>Block {blockNumber}</h1>
                 <h6 className="text-center text-light mb-5">{blockHash}</h6>
 

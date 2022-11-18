@@ -5,6 +5,7 @@ import Image from "next/image";
 import {Accordion, AccordionSummary, AccordionDetails} from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import EncodedMode from "./EncodedMode";
+import { CancelOutlined } from "@mui/icons-material";
 
 export default function SkillsInfo(props) {
     const [encoded,setEncoded] = useState(true);
@@ -25,19 +26,19 @@ export default function SkillsInfo(props) {
         {
             encoded ?
         
-            <EncodedMode blockNumber={6} blockHash = {blockhash} txs={txs} decode={() => setEncoded(false)} />
+            <EncodedMode close={() => props.close()} blockNumber={6} blockHash = {blockhash} txs={txs} decode={() => setEncoded(false)} />
         : 
 
             <div className={"mt-5 " + styles["main-container"]}>
                     <div className={"text-center mt-5 text-light " + styles['name']}>Skills</div>
-
+                    <CancelOutlined className={`cross-btn`} onClick={props.close} />
                     <div className={`d-flex flex-column align-items-center mt-5 ${styles['list']}`}>
-                        <strong><li><Image src={"/solidity.png"} width={30} height={30} />Solidity</li></strong>  
-                        <strong><li><Image src={"/react.png"} width={30} height={30} /> React</li></strong>  
-                        <strong><li><Image src={"/nodejs.png"} width={30} height={30} /> Nodejs</li></strong>  
-                        <strong><li><Image src={"/js.png"} width={30} height={30} /> Javascript</li></strong>  
-                        <strong><li><Image src={"/mongodb.png"} width={30} height={30} /> MongoDB</li></strong>  
-                        <strong><li><Image src={"/html.png"} width={30} height={30} /> HTML & CSS</li></strong>  
+                        <strong><li><Image priority src={"/solidity.png"} width={30} height={30} />Solidity</li></strong>  
+                        <strong><li><Image priority src={"/react.png"} width={30} height={30} /> React</li></strong>  
+                        <strong><li><Image priority src={"/nodejs.png"} width={30} height={30} /> Nodejs</li></strong>  
+                        <strong><li><Image priority src={"/js.png"} width={30} height={30} /> Javascript</li></strong>  
+                        <strong><li><Image priority src={"/mongodb.png"} width={30} height={30} /> MongoDB</li></strong>  
+                        <strong><li><Image priority src={"/html.png"} width={30} height={30} /> HTML & CSS</li></strong>  
                     </div>
                     <div className={"text-center mt-5 text-light " + styles['name']}>Courses</div>
                     <div className={`mx-auto mt-3 px-2 py-4 ${styles["accordion-items"]}`}>

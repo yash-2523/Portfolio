@@ -4,6 +4,7 @@ import { sha256 } from "js-sha256";
 import {Accordion, AccordionSummary, AccordionDetails} from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import EncodedMode from "./EncodedMode";
+import { CancelOutlined } from "@mui/icons-material";
 
 export default function ExperienceInfo(props) {
     const [encoded,setEncoded] = useState(true);
@@ -24,10 +25,11 @@ export default function ExperienceInfo(props) {
         {
             encoded ?
         
-            <EncodedMode blockNumber={2} blockHash = {blockhash} txs={txs} decode={() => setEncoded(false)} />
+            <EncodedMode close={() => props.close()} blockNumber={2} blockHash = {blockhash} txs={txs} decode={() => setEncoded(false)} />
         : 
 
             <div className={"mt-5 " + styles["main-container"]}>
+                <CancelOutlined className={`cross-btn`} onClick={props.close} />
                 <div className={"text-center mt-5 text-light " + styles['name']}>Employment History</div>
 
                     <div className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>

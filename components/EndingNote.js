@@ -5,6 +5,7 @@ import {Accordion, AccordionSummary, AccordionDetails} from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import EncodedMode from "./EncodedMode";
 import Image from "next/image";
+import { CancelOutlined } from "@mui/icons-material";
 
 export default function EndingNote(props) {
     const [encoded,setEncoded] = useState(true);
@@ -25,15 +26,16 @@ export default function EndingNote(props) {
         {
             encoded ?
         
-            <EncodedMode blockNumber={7} blockHash = {blockhash} txs={txs} decode={() => setEncoded(false)} />
+            <EncodedMode close={() => props.close()} blockNumber={7} blockHash = {blockhash} txs={txs} decode={() => setEncoded(false)} />
         : 
 
             <div className={"mt-5 " + styles["main-container"]}>
+                <CancelOutlined className={`cross-btn`} onClick={props.close} />
                 <div className={"text-center mt-5 text-light " + styles['name']}>Feathers on the Cap</div>
 
                     <div className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                         <div className="d-flex flex-column">
-                            <span className="d-flex align-items-center"><Image className="me-3" src={"/vector32.png"} style={{borderRadius: "30%"}} width={60} height={40} /><h3><a href="#" target={"_blank"} rel="noreferrer">Vector 32</a></h3></span>
+                            <span className="d-flex align-items-center"><Image priority className="me-3" src={"/vector32.png"} style={{borderRadius: "30%"}} width={60} height={40} /><h3><a href="#" target={"_blank"} rel="noreferrer">Vector 32</a></h3></span>
                             <p className="ps-5 ms-4">Think out of the Box</p>
                         </div>
                         <span className="mt-4">
@@ -48,7 +50,7 @@ export default function EndingNote(props) {
                     </div>             
                     <div className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                         <div className="d-flex flex-column">
-                            <span className="d-flex align-items-center"><Image className="me-3" style={{borderRadius: "50%"}} src={"/agrivirtus.png"} width={60} height={60} /><h3><a href="https://agrivirtus.farm" target={"_blank"} rel="noreferrer">Agrivirtus</a></h3></span>
+                            <span className="d-flex align-items-center"><Image priority className="me-3" style={{borderRadius: "50%"}} src={"/agrivirtus.png"} width={60} height={60} /><h3><a href="https://agrivirtus.farm" target={"_blank"} rel="noreferrer">Agrivirtus</a></h3></span>
                         </div>
                         <span className="mt-4">
                             <br /><strong>Role -</strong> Lead Developer at Agrivirtus
@@ -63,7 +65,7 @@ export default function EndingNote(props) {
                     </div>  
                     <div className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                         <div className="d-flex flex-column">
-                            <span className="d-flex align-items-center"><Image className="me-3" style={{borderRadius: "50%"}} src={"/fate.jpeg"} width={60} height={60} /><h3><a href="https://fate-dao.com" target={"_blank"} rel="noreferrer">Fate DAO</a></h3></span>
+                            <span className="d-flex align-items-center"><Image priority className="me-3" style={{borderRadius: "50%"}} src={"/fate.jpeg"} width={60} height={60} /><h3><a href="https://fate-dao.com" target={"_blank"} rel="noreferrer">Fate DAO</a></h3></span>
                         </div>
                         <span className="mt-4">
                             <br /><strong>Role -</strong> Lead Developer at Fate DAO

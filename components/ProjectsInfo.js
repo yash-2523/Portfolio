@@ -7,6 +7,7 @@ import Image from "next/image";
 import EncodedMode from "./EncodedMode";
 import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { CancelOutlined } from "@mui/icons-material";
 
 export default function ProjectsInfo(props) {
     const [encoded, setEncoded] = useState(true);
@@ -27,12 +28,12 @@ export default function ProjectsInfo(props) {
             {
                 encoded ?
 
-                    <EncodedMode blockNumber={3} blockHash={blockhash} txs={txs} decode={() => setEncoded(false)} />
+                    <EncodedMode close={() => props.close()} blockNumber={3} blockHash={blockhash} txs={txs} decode={() => setEncoded(false)} />
                     :
 
                     <div className={"mt-5 " + styles["main-container"]}>
                         <div className={"text-center mt-5 text-light " + styles['name']}>Projects</div>
-
+                        <CancelOutlined className={`cross-btn`} onClick={props.close} />
                         <Accordion className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon />}

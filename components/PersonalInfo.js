@@ -5,6 +5,7 @@ import HomeStyles from "../styles/Home.module.css";
 import { sha256 } from "js-sha256";
 import Image from "next/image";
 import EncodedMode from "./EncodedMode";
+import { CancelOutlined } from "@mui/icons-material";
 
 export default function PersonalInfo(props) {
     const [encoded,setEncoded] = useState(true);
@@ -25,16 +26,17 @@ export default function PersonalInfo(props) {
         {
             encoded ?
         
-            <EncodedMode blockNumber={1} blockHash = {blockhash} txs={txs} decode={() => setEncoded(false)} />
+            <EncodedMode close={() => props.close()} blockNumber={1} blockHash = {blockhash} txs={txs} decode={() => setEncoded(false)} />
         : 
 
-            <div className={`mt-5 px-2 mb-5 ${styles["main-container"]}`}>
+            <div className={`mt-5 px-lg-2 px-md-2 px-1 mb-5 ${styles["main-container"]}`}>
+                <CancelOutlined className={`cross-btn`} onClick={props.close} />
                 <div className={"text-center mt-5 text-light " + styles['name']}>Yash Doshi</div>
                 <h2 className={`text-center text-light mb-5`}>Blockchain Developer</h2>
                 
                 <div className="col-12 mt-5 mb-5 d-flex flex-lg-row flex-md-column flex-sm-column flex-column" style={{rowGap: "2.5rem"}}>
                     <div className={`col-12 col-lg-6 text-center`}>
-                        <Image src={"/yash_doshi.jpeg"} width={350} height={350} style={{borderRadius: "50%"}}></Image>
+                        <img src={"/yash_doshi.jpeg"} width={"350"} height={"350"} style={{borderRadius: "50%"}}></img>
                     </div>
                     <span className={`col-12 col-lg-6`}>
                         <p>A skilled blockchain developer with experience in the system architecture, setup, testing, and maintenance of software systems. Competent in multiple programming languages and platforms. Technology and development skills at the forefront of the industry. Capable of working both independently on projects and in a team to accomplish goals.</p>

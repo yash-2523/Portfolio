@@ -4,6 +4,7 @@ import { sha256 } from "js-sha256";
 import {Accordion, AccordionSummary, AccordionDetails} from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import EncodedMode from "./EncodedMode";
+import { CancelOutlined } from "@mui/icons-material";
 
 export default function EducationInfo(props) {
     const [encoded,setEncoded] = useState(true);
@@ -24,11 +25,12 @@ export default function EducationInfo(props) {
         {
             encoded ?
         
-            <EncodedMode blockNumber={4} blockHash = {blockhash} txs={txs} decode={() => setEncoded(false)} />
+            <EncodedMode close={() => props.close()} blockNumber={4} blockHash = {blockhash} txs={txs} decode={() => setEncoded(false)} />
         : 
 
             <div className={"mt-5 " + styles["main-container"]}>
                 <div className={"text-center mt-5 text-light " + styles['name']}>Education</div>
+                <CancelOutlined className={`cross-btn`} onClick={props.close} />
 
                     <div className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                         <div className="d-flex flex-column">
