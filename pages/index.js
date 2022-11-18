@@ -188,7 +188,7 @@ export default function Home() {
 
   return (
     <div className={styles['main']}>
-        <div className={"text-center " + styles["title-container"]} style={{fontFamily: "Roboto", fontWeight: "900"}}>Yash's Blockchain</div>
+        <div className={"text-center " + styles["title-container"]} style={{fontFamily: "Roboto", fontWeight: "900"}}>Blockchain</div>
         <div className={styles['content']}>
           
           <span className={styles['block-one-container']}>
