@@ -17,7 +17,7 @@ export default function Document() {
                 <meta property="og:title" content={"Yash Doshi | Blockchain Developer"} key="ogtitle" />
                 <meta property="og:description" content={"Blockchain Developer and Full-stack web developer with 2 years of experience. Passionate Programmer, eager to learn new technologies. Cofounder fo Vector 32 | Lead developer at Agrivirtus"} key="ogdescription" />
                 <meta property="og:image" content="https://yashdoshi.dev/personal-details-og.png" key="ogimage" />
-                <meta property="og:image:type" content="image/jpg" key="ogimgtype" />
+                <meta property="og:image:type" content="image/png" key="ogimgtype" />
                 <meta property="og:image:width" content="1200" key="ogimgwidth" />
                 <meta property="og:image:height" content="630" key="ogimgheight" />
                 <meta property="og:type" content="website" key="ogtype" />
