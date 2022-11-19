@@ -41,13 +41,12 @@ export default function ProjectsInfo(props) {
                                 id="panel1a-header"
                             >
                                 <div className="d-flex flex-column">
-                                    <h3>NFT Marketplace</h3>
-                                    <p>Jun 2021 — Jul 2021</p>
+                                    <h3>Axl INU</h3>
+                                    <p>Feb 2022 — March 2022</p>
                                 </div>
                             </AccordionSummary>
                             <AccordionDetails className="mt-3">
-                                Developed a marketplace where users can buy/sell different NFTs and create their
-                                own NFTs. Front-end was developed in Nextjs and Smart Contracts in solidity.
+                                AXL is DEFI platform which provides several services like staking, launchpad, presale, etc. I was responsible for developement of smart contracts for the project, at my job. <a style={{color: "#356bdb"}} href="https://www.axltoken.com/">Website</a>
                             </AccordionDetails>
                         </Accordion>
 
@@ -65,7 +64,7 @@ export default function ProjectsInfo(props) {
                             <AccordionDetails className="mt-3">
                                 A DAO system for a community that involves power-based voting and vesting
                                 for users, and developing a liquidity pool. Customized business logic for DAO
-                                management and the security of funds. <a href="https://agrivirtus.farm" target={"_blank"} rel="noreferrer">Website</a>
+                                management and the security of funds. <a style={{color: "#356bdb"}} href="https://agrivirtus.farm" target={"_blank"} rel="noreferrer">Website</a>
                             </AccordionDetails>
                         </Accordion>
 
@@ -101,7 +100,7 @@ export default function ProjectsInfo(props) {
                             <AccordionDetails className="mt-3">
                                 Built a platform where students can check their academic performance, schedule,
                                 and admin can enroll students into a particular course. The platform was developed
-                                in MERN stack and deployed on vercel. Link to the <a href="https://wmc-guide.vercel.app" target={"_blank"} rel="noreferrer">website</a>, Link for the <a href="https://dribbble.com/shots/16461580-Student-Companion?utm_source=Clipboard_Shot&utm_campaign=yash__doshi&utm_content=Student%20Companion&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=yash__doshi&utm_content=Student%20Companion&utm_medium=Social_Share" target={"_blank"} rel="noreferrer">website
+                                in MERN stack and deployed on vercel. Link to the <a style={{color: "#356bdb"}} href="https://wmc-guide.vercel.app" target={"_blank"} rel="noreferrer">website</a>, Link for the <a style={{color: "#356bdb"}} href="https://dribbble.com/shots/16461580-Student-Companion?utm_source=Clipboard_Shot&utm_campaign=yash__doshi&utm_content=Student%20Companion&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=yash__doshi&utm_content=Student%20Companion&utm_medium=Social_Share" target={"_blank"} rel="noreferrer">website
                                     design</a>
                             </AccordionDetails>
                         </Accordion>

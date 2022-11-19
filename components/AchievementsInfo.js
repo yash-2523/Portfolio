@@ -29,7 +29,7 @@ export default function AchievementsInfo(props) {
                     :
 
                     <div className={"mt-5 " + styles["main-container"]}>
-                        <div className={"text-center mt-5 text-light" + styles['name']}>Achievements</div>
+                        <div className={"text-center mt-5 text-light " + styles['name']}>Achievements</div>
                         <CancelOutlined className={`cross-btn`} onClick={props.close} />
 
                         <div className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
@@ -57,7 +57,7 @@ export default function AchievementsInfo(props) {
                                 <h3>5 star Coder on Codechef</h3>
                             </div>
                             <span className="mt-3">
-                                Codechef profile: <a href="https://www.codechef.com/users/yash_2523" target={"_blank"} rel="noreferrer">https://www.codechef.com/users/yash_2523</a>
+                                Codechef profile: <a style={{color: "#356bdb"}} href="https://www.codechef.com/users/yash_2523" target={"_blank"} rel="noreferrer">https://www.codechef.com/users/yash_2523</a>
                             </span>
                         </div>
 
