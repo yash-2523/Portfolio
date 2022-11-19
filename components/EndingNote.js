@@ -8,7 +8,7 @@ import Image from "next/image";
 import { CancelOutlined } from "@mui/icons-material";
 
 export default function EndingNote(props) {
-    const [encoded,setEncoded] = useState(true);
+    const [encoded,setEncoded] = useState(false);
     const txs = [
         "0xf104e98332e2a826fa815cc13d8de6022d9cb8a98e4ead1286f3a3a160de4972",
         "0xe8725716bd7371405665e4f680904bbb349664419f5916fe199750da17d236d8",

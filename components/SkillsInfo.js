@@ -8,7 +8,7 @@ import EncodedMode from "./EncodedMode";
 import { CancelOutlined } from "@mui/icons-material";
 
 export default function SkillsInfo(props) {
-    const [encoded,setEncoded] = useState(true);
+    const [encoded,setEncoded] = useState(false);
     const txs = [
         "0x7ead9d0680addca94bbfaeec63e17c1e48ba89c1a9667ee7a43e6be652deeb7d",
         "0x01fad993ff61aca9a1f2f07100c95eb1559d8b6440a00cb974a92810a6b5a2dc",
