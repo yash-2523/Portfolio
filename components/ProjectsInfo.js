@@ -10,7 +10,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { CancelOutlined } from "@mui/icons-material";
 
 export default function ProjectsInfo(props) {
-    const [encoded, setEncoded] = useState(true);
+    const [encoded,setEncoded] = useState(false);
     const txs = [
         "0x4ad53dbe3ea8e4c960d89c57100a3155aa8756406de4f6e113c4e5909b5920ff",
         "0x75a46a80ccd250f84c4da5eecc44fb0b5d6b7835cfe56b13c2b246d71fa39289",

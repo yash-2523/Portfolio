@@ -7,7 +7,7 @@ import EncodedMode from "./EncodedMode";
 import { CancelOutlined } from "@mui/icons-material";
 
 export default function AchievementsInfo(props) {
-    const [encoded, setEncoded] = useState(true);
+    const [encoded,setEncoded] = useState(false);
     const txs = [
         "0x74cf2bc63fe122206c82cecc1b3f31a100d5d4aaca6e12682590271276fb4691",
         "0x2bd4f0b73fdfba329b37d8f3b3424851cc052991a906d8ee4f297c222bf4a7dd",
