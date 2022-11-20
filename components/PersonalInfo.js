@@ -36,7 +36,7 @@ export default function PersonalInfo(props) {
                 
                 <div className="col-12 mt-5 mb-5 d-flex flex-lg-row flex-md-column flex-sm-column flex-column" style={{rowGap: "2.5rem"}}>
                     <div className={`col-12 col-lg-6 text-center`}>
-                        <img src={"/yash_doshi.jpeg"} width={"350"} height={"350"} style={{borderRadius: "50%"}}></img>
+                        <Image priority alt="Yash Doshi" src={"/yash_doshi.jpeg"} width={"350"} height={"350"} style={{borderRadius: "50%"}}></Image>
                     </div>
                     <span className={`col-12 col-lg-6`}>
                         <p>A skilled blockchain developer with experience in the system architecture, setup, testing, and maintenance of software systems. Competent in multiple programming languages and platforms. Technology and development skills at the forefront of the industry. Capable of working both independently on projects and in a team to accomplish goals.</p>

@@ -35,7 +35,7 @@ export default function EndingNote(props) {
 
                     <div className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                         <div className="d-flex flex-column">
-                            <span className="d-flex align-items-center"><Image priority className="me-3" src={"/vector32.png"} style={{borderRadius: "30%"}} width={60} height={40} /><h3><a style={{color: "#356bdb"}} href="#" target={"_blank"} rel="noreferrer">Vector 32</a></h3></span>
+                            <span className="d-flex align-items-center"><Image priority className="me-3" src={"/vector32.png"} style={{borderRadius: "30%"}} alt="vector32 logo" width={60} height={40} /><h3><a style={{color: "#356bdb"}} href="#" target={"_blank"} rel="noreferrer">Vector 32</a></h3></span>
                             <p className="ps-5 ms-4">Think out of the Box</p>
                         </div>
                         <span className="mt-4">
@@ -50,7 +50,7 @@ export default function EndingNote(props) {
                     </div>             
                     <div className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                         <div className="d-flex flex-column">
-                            <span className="d-flex align-items-center"><Image priority className="me-3" style={{borderRadius: "50%"}} src={"/agrivirtus.png"} width={60} height={60} /><h3><a style={{color: "#356bdb"}} href="https://agrivirtus.farm" target={"_blank"} rel="noreferrer">Agrivirtus</a></h3></span>
+                            <span className="d-flex align-items-center"><Image priority className="me-3" style={{borderRadius: "50%"}} src={"/agrivirtus.png"} alt="Agrivirtus logo" width={60} height={60} /><h3><a style={{color: "#356bdb"}} href="https://agrivirtus.farm" target={"_blank"} rel="noreferrer">Agrivirtus</a></h3></span>
                         </div>
                         <span className="mt-4">
                             <br /><strong>Role -</strong> Lead Developer at Agrivirtus
@@ -65,7 +65,7 @@ export default function EndingNote(props) {
                     </div>  
                     <div className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                         <div className="d-flex flex-column">
-                            <span className="d-flex align-items-center"><Image priority className="me-3" style={{borderRadius: "50%"}} src={"/fate.jpeg"} width={60} height={60} /><h3><a style={{color: "#356bdb"}} href="https://fate-dao.com" target={"_blank"} rel="noreferrer">Fate DAO</a></h3></span>
+                            <span className="d-flex align-items-center"><Image priority className="me-3" style={{borderRadius: "50%"}} src={"/fate.jpeg"} alt="Fate logo" width={60} height={60} /><h3><a style={{color: "#356bdb"}} href="https://fate-dao.com" target={"_blank"} rel="noreferrer">Fate DAO</a></h3></span>
                         </div>
                         <span className="mt-4">
                             <br /><strong>Role -</strong> Lead Developer at Fate DAO

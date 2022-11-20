@@ -90,6 +90,9 @@ export default function Home() {
 
   useEffect(() => {
     alert.info("Tap on the blocks to know more about me!")
+  }, [])
+
+  useEffect(() => {
     if(personalInfoHandle.active===false && modalHandlers["0"]){
       if(blocks["0"]===false){
         alert.success("New Block Mined!");

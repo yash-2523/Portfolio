@@ -46,7 +46,7 @@ export default function ProjectsInfo(props) {
                                 </div>
                             </AccordionSummary>
                             <AccordionDetails className="mt-3">
-                                AXL is DEFI platform which provides several services like staking, launchpad, presale, etc. I was responsible for developement of smart contracts for the project, at my job. <a style={{color: "#356bdb"}} href="https://www.axltoken.com/" target={"_blank"}>Website</a>
+                                AXL is DEFI platform which provides several services like staking, launchpad, presale, etc. I was responsible for developement of smart contracts for the project, at my job. <a style={{color: "#356bdb"}} href="https://www.axltoken.com/" target={"_blank"} rel="noreferrer">Website</a>
                             </AccordionDetails>
                         </Accordion>
 
@@ -120,7 +120,7 @@ export default function ProjectsInfo(props) {
                                 A platform developed using MERN stack, where users can maintain their streak of
                                 problem-solving on CodeForces and will be provided with a higher level problem
                                 with respect to their ratings, which will help them to improve their skills in
-                                Competitive Programming. <a style={{color: "#356bdb"}} href={"https://github.com/yash-2523/Upsolve"} target={"_blank"}>Github</a>
+                                Competitive Programming. <a style={{color: "#356bdb"}} href={"https://github.com/yash-2523/Upsolve"} target={"_blank"} rel="noreferrer">Github</a>
                             </AccordionDetails>
                         </Accordion>
 

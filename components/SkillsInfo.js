@@ -33,12 +33,12 @@ export default function SkillsInfo(props) {
                     <div className={"text-center mt-5 text-light " + styles['name']}>Skills</div>
                     <CancelOutlined className={`cross-btn`} onClick={props.close} />
                     <div className={`d-flex flex-column align-items-center mt-5 ${styles['list']}`}>
-                        <strong><li><Image priority src={"/solidity.png"} width={30} height={30} />Solidity</li></strong>  
-                        <strong><li><Image priority src={"/react.png"} width={30} height={30} /> React</li></strong>  
-                        <strong><li><Image priority src={"/nodejs.png"} width={30} height={30} /> Nodejs</li></strong>  
-                        <strong><li><Image priority src={"/js.png"} width={30} height={30} /> Javascript</li></strong>  
-                        <strong><li><Image priority src={"/mongodb.png"} width={30} height={30} /> MongoDB</li></strong>  
-                        <strong><li><Image priority src={"/html.png"} width={30} height={30} /> HTML & CSS</li></strong>  
+                        <strong><li><Image priority alt="solidity" src={"/solidity.png"} width={30} height={30} />Solidity</li></strong>  
+                        <strong><li><Image priority alt="react" src={"/react.png"} width={30} height={30} /> React</li></strong>  
+                        <strong><li><Image priority alt="nodejs" src={"/nodejs.png"} width={30} height={30} /> Nodejs</li></strong>  
+                        <strong><li><Image priority alt="javascript" src={"/js.png"} width={30} height={30} /> Javascript</li></strong>  
+                        <strong><li><Image priority alt="mongodb" src={"/mongodb.png"} width={30} height={30} /> MongoDB</li></strong>  
+                        <strong><li><Image priority alt="html" src={"/html.png"} width={30} height={30} /> HTML & CSS</li></strong>  
                     </div>
                     <div className={"text-center mt-5 text-light " + styles['name']}>Courses</div>
                     <div className={`mx-auto mt-3 px-2 py-4 ${styles["accordion-items"]}`}>
