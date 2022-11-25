@@ -2,6 +2,7 @@ import '../styles/globals.css';
 import { positions, Provider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 import Head from 'next/head';
+import {Analytics} from "@vercel/analytics/react";
 
 const options = {
   timeout: 1500,
@@ -21,6 +22,7 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       <Component {...pageProps} />
+      <Analytics />
     </Provider>
   )
 }
