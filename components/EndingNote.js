@@ -50,7 +50,7 @@ export default function EndingNote(props) {
                     </div>             
                     <div className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                         <div className="d-flex flex-column">
-                            <span className="d-flex align-items-center"><Image priority className="me-3" style={{borderRadius: "50%"}} src={"/agrivirtus.png"} alt="Agrivirtus logo" width={60} height={60} /><h3><a style={{color: "#356bdb"}} href="https://agrivirtus.farm" target={"_blank"} rel="noreferrer">Agrivirtus</a></h3></span>
+                            <span className="d-flex align-items-center"><Image priority className="me-3" style={{borderRadius: "50%"}} src={"/agrivirtus.png"} alt="Agrivirtus logo" width={60} height={60} /><h3><a style={{color: "#356bdb"}} href="https://yluck.io/agrivirtus/" target={"_blank"} rel="noreferrer">Agrivirtus</a></h3></span>
                         </div>
                         <span className="mt-4">
                             <br /><strong>Role -</strong> Lead Developer at Agrivirtus
