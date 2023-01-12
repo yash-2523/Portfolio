@@ -35,7 +35,7 @@ export default function EndingNote(props) {
 
                     <div className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                         <div className="d-flex flex-column">
-                            <span className="d-flex align-items-center"><Image priority className="me-3" src={"/vector32.png"} style={{borderRadius: "30%"}} alt="vector32 logo" width={60} height={40} /><h3><a style={{color: "#356bdb"}} href="#" target={"_blank"} rel="noreferrer">Vector 32</a></h3></span>
+                            <span className="d-flex align-items-center"><Image priority className="me-3" src={"/vector32.png"} style={{borderRadius: "30%"}} alt="vector32 logo" width={60} height={40} /><h3><a style={{color: "#356bdb"}} href="https://vector32.in" target={"_blank"} rel="noreferrer">Vector 32</a></h3></span>
                             <p className="ps-5 ms-4">Think out of the Box</p>
                         </div>
                         <span className="mt-4">
