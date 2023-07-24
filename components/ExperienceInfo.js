@@ -34,7 +34,7 @@ export default function ExperienceInfo(props) {
 
                     <div className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                         <div className="d-flex flex-column">
-                            <h3>Blockchain Developer, Get Thrifty LLP</h3>
+                            <h3>Full-Stack Blockchain Developer, Get Thrifty LLP</h3>
                             <p>Feb 2022 - Present</p>
                         </div>
                         <span className="mt-3">
@@ -45,8 +45,18 @@ export default function ExperienceInfo(props) {
                     </div>
                     <div className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
                         <div className="d-flex flex-column">
+                            <h3>Blockchain Developer, 6thlabs</h3>
+                            <p>Sept 2020 — Jan 2020</p>
+                        </div>
+                        <span className="mt-3">
+                        Have worked on solidity and developed smart contracts for multiple projects. 
+                        Worked with all different blockchains like Ethereum, Polygon, Avalanche, Binance Smart chain.
+                        </span>                   
+                    </div>
+                    <div className={"mx-auto mt-5 px-2 py-4 " + styles["accordion-items"]}>
+                        <div className="d-flex flex-column">
                             <h3>Full Stack Developer, Troovi.in</h3>
-                            <p>Jun 2021 — Aug 2021</p>
+                            <p>Jun 2020 — Aug 2020</p>
                         </div>
                         <span className="mt-3">
                         Single-handedly designed the architect, developed and deployed the project using

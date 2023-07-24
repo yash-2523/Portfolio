@@ -32,7 +32,7 @@ export default function PersonalInfo(props) {
             <div className={`mt-5 px-lg-2 px-md-2 px-1 mb-5 ${styles["main-container"]}`}>
                 <CancelOutlined className={`cross-btn`} onClick={props.close} />
                 <div className={"text-center mt-5 text-light " + styles['name']}>Yash Doshi</div>
-                <h2 className={`text-center text-light mb-5`}>Blockchain Developer</h2>
+                <h2 className={`text-center text-light mb-5`}>Full-Stack Blockchain Developer</h2>
                 
                 <div className="col-12 mt-5 mb-5 d-flex flex-lg-row flex-md-column flex-sm-column flex-column" style={{rowGap: "2.5rem"}}>
                     <div className={`col-12 col-lg-6 text-center`}>
