@@ -52,7 +52,13 @@ export default function SkillsInfo(props) {
                             <h3><li>Python Data Analysis, Coursera</li></h3>
                             <p className="ps-5">Oct 2021 — Nov 2021</p>
                         </div>               
-                    </div>        
+                    </div>   
+                    <div className={`mx-auto mt-3 px-2 py-4 ${styles["accordion-items"]}`}>
+                        <div className="d-flex flex-column">
+                            <h3><li>EFFECTIVE PUBLIC SPEAKING COURSE, Ahmedabad Managment Association</li></h3>
+                            <p className="ps-5">May 2022 - Jun 2022</p>
+                        </div>               
+                    </div>      
                 <button className={"btn mt-5 btn-rounded mx-auto"} onClick={() => setEncoded(true)} style={{backgroundColor: "cyan"}}>Encode Block</button>
             </div>
         }
